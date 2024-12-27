@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkinspykube
+spec:
+  type: NodePort
+  selector:
+    type: jenkinspykube
+  ports:
+    - port: 4000
+      targetPort: 4000
